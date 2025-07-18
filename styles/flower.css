@@ -1,5 +1,91 @@
-*{
+/* Added Lato google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* CSS RESET */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/* Shared styles */
+.middle-align {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.btn-primary {
+    background-color: #E55473;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 20px 43px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Header Styles Here */
+.header {
+    background-color: #E5547310;
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+
+.header-container {
+    /* border: 2px solid red; */
+}
+
+.header-content {
+    /* border: 2px solid blue; */
+    max-width: 700px;
+    height: 500px;
+    margin: 147px 97px 147px 0;
+}
+
+.header-title {
+    color: #272727;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.header-description {
+    color: #27272760;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.header-image {
+    max-width: 630px;
+}
+
+.header-image img {
+    width: 100%;
+}
+
+/* Responsive for small devices */
+@media screen and (max-width: 576px) {
+
+    /* header sectino starts here */
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-content {
+        height: auto;
+        margin: 20px 10px;
+    }
+
+    .header-title {
+        font-size: 3rem;
+    }
+    /* header section ends here */
+
+    
+
 }
